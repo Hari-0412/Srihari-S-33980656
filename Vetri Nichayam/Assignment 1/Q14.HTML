@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Sidebar Layout</title>
+
+    <style>
+        
+        .container {
+            display: flex;
+        }
+
+       
+       .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            height: 2000px;
+        } 
+
+        
+        .fixed-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: yellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="fixed-box">
+    This box is FIXED<br>
+    (Always stays in the same place)
+</div>
+
+<div class="container">
+
+   
+    <div class="sidebar">
+        <h3>Sticky Sidebar</h3>
+        <p>This sidebar stays visible when you scroll down.</p>
+        <p>(Using <b>position: sticky</b>)</p>
+    </div>
+
+    <div class="content">
+        <h1>Main Content Area</h1>
+        <p>Scroll down to see how the sticky sidebar behaves.</p>
+
+        <h2>Difference Between Fixed and Sticky</h2>
+        <p><b>position: sticky</b>: Element scrolls normally but becomes fixed when it reaches a certain point.</p>
+        <p><b>position: fixed</b>: Element always stays in the same position, even if you scroll.</p>
+
+        <p>Keep scrolling...</p>
+        <p style="margin-top: 800px;">You are still scrolling, but the sidebar is still visible.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

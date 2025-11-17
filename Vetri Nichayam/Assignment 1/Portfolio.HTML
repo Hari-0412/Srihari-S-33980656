@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation Menu</title>
+
+    <style>
+
+        
+        nav {
+            background-color:black;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;            
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 14px;
+        }
+        .profile {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid #444;
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            font-size: 28px;
+        }
+
+
+
+        @media (max-width: 1024px) and (min-width: 768px) {
+            nav {
+                background-color: black;   
+            }
+
+            nav ul {
+                display: flex;            
+                gap: 15px;
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: block;        
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 12px 0;         
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section class="profile">
+    <img src="Srihari.jpg" alt="My Photo">
+    <h2>Your Name</h2>
+    <p>Junior Software Developer | Web Designer | Tech Enthusiast</p>
+</section>
+
+</body>
+</html>
